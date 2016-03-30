@@ -48,3 +48,14 @@ SCENARIO("matrix: operator ==", "[equal]") {
 	bool f = (A == B);
 	REQUIRE(f);
 }
+
+SCENARIO("matrix.print_matrix", "[print]") {
+	matrix A, B;
+	A.get_from_file("A2x2.txt");
+	bool f = false;
+	if (A.print_matrix){
+			f =true;
+		}
+	REQUIRE(f);
+}
+
